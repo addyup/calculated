@@ -4,7 +4,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /calculated
 
 # Copy the Spring Boot application JAR file to the container
-COPY target/websc-0.0.1-SNAPSHOT.jar app.jar
+COPY target/calculated-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port that your Spring Boot application runs on
 EXPOSE 8080
