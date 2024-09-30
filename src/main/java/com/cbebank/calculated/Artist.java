@@ -1,17 +1,30 @@
 package com.cbebank.calculated;
 
+import org.springframework.web.multipart.MultipartFile;
 
 public class Artist {
     private String name;
     private String email;
     private String bio;
-    // Constructors
+    MultipartFile resume;
+    
+    
+    public MultipartFile getResume() {
+		return resume;
+	}
+
+	public void setResume(MultipartFile resume) {
+		this.resume = resume;
+	}
+
+	// Constructors
     public Artist() {}
 
-    public Artist(String name, String email, String bio) {
+    public Artist(String name, String email, String bio, MultipartFile resume) {
     	this.email = email;
         this.bio = bio;
         this.name = name;
+        this.resume = resume;
         
         
     }

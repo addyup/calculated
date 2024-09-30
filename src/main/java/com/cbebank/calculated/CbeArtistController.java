@@ -24,4 +24,6 @@ public class CbeArtistController {
 
         return new ResponseEntity<>("Artist details sent successfully!", HttpStatus.OK);
     }
+    
+    
 }
