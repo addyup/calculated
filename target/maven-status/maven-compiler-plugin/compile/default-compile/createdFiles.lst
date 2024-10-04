@@ -1,0 +1,5 @@
+com/cbebank/calculated/Artist.class
+com/cbebank/calculated/CbeArtistController.class
+com/cbebank/calculated/CalculatedApplication.class
+com/cbebank/calculated/WebConfig.class
+com/cbebank/calculated/EmailService.class

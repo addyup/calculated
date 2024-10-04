@@ -1,5 +1,8 @@
 package com.cbebank.calculated;
 
+import java.io.IOException;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -7,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/artist")
-@CrossOrigin(origins = "*")
 public class CbeArtistController {
 
     @Autowired
@@ -25,5 +27,10 @@ public class CbeArtistController {
         return new ResponseEntity<>("Artist details sent successfully!", HttpStatus.OK);
     }
     
+
+    @GetMapping("/a-tm")
+    public List<String> scrapeATags() throws IOException {
+        return emailService.scrapeAllATags();
+    }
     
 }
